@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10%;
+}
+
+.container > div {
+    margin: 60px;
+}
+
+p {
+    margin: 10%;
+    text-align: center;
+}
+/* Transition */
+.transition {
+    width: 170px;
+    height: 170px;
+    border-radius: 5%;
+    background-color: rgb(0, 251, 255);
+    transition: background-color 2s ease;
+}
+
+.transition:hover {
+    background-color: red;
+}
+
+/* Animation */
+@keyframes example {
+    from {background-color: rgb(255, 0, 0);}
+    to {background-color: rgb(255, 251, 0);}
+}
+
+.animation {
+    width: 170px;
+    height: 170px;
+    border-radius: 5%;
+    background-color: rgb(255, 0, 0);
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+/* Transformation 2D */
+.transformation2D {
+    width: 160px;
+    height: 160px;
+    border-radius: 5%;
+    background-color: rgb(255, 0, 200);
+    transform: rotate(0deg) scale(1.5);
+    transition: transform 2s ease;
+}
+
+.transformation2D:hover {
+    transform: rotate(360deg) scale(1);
+}
+
+/* Transformation 3D */
+.transformation3D {
+    width: 170px;
+    height: 170px;
+    border-radius: 5%;
+    background-color: rgb(158, 0, 176);
+    transform: rotateX(180deg) rotateY(180deg) scale(1.5);
+    transition: transform 2s;
+}
+
+.transformation3D:hover {
+    transform: rotateX(0deg) rotateY(0deg) scale(1);
+}
